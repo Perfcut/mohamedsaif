@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Saif — Web Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════
+     NAV
+══════════════════════════════ -->
+<nav>
+  <div class="nav-logo">MS<span>.</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about" onclick="closeMobileNav()">About</a>
+  <a href="#skills" onclick="closeMobileNav()">Skills</a>
+  <a href="#projects" onclick="closeMobileNav()">Work</a>
+  <a href="#contact" onclick="closeMobileNav()">Contact</a>
+</div>
+
+<!-- ══════════════════════════════
+     HERO
+══════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow hero-animate">Hi, I'm</div>
+
+    <h1 class="hero-name">
+      <span class="hero-name-line hero-animate hero-animate-2">Mohamed</span>
+      <span class="hero-name-line hero-animate hero-animate-3">Saif.</span>
+    </h1>
+
+    <div class="hero-accent-line hero-animate hero-animate-4"></div>
+
+    <div class="hero-title-row hero-animate hero-animate-4">
+      <p class="hero-tagline">
+        16-year-old web developer from Nagapattinam, Tamil Nadu. Building modern digital experiences through <strong>PERFCUT</strong>.
+      </p>
+    </div>
+
+    <div class="hero-socials hero-animate hero-animate-5">
+      <!-- Instagram -->
+      <a href="https://instagram.com/perf.cut" target="_blank" class="hero-social-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+        @perf.cut
+      </a>
+      <!-- GitHub -->
+      <a href="https://perfect.github.io" target="_blank" class="hero-social-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+        </svg>
+        GitHub
+      </a>
+      <!-- Mail -->
+      <a href="mailto:team.perfect@gmail.com" class="hero-social-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+        </svg>
+        Mail
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     ABOUT
+══════════════════════════════ -->
+<section id="about">
+  <div class="section-label fade-in">01 — About</div>
+
+  <div class="about-inner">
+    <div class="about-left fade-in">
+      <h2 class="section-heading">Building the web,<br><em class="copper-em">one line at a time.</em></h2>
+      <p class="about-text">
+        I'm <strong>Mohamed Saif</strong>, a 16-year-old aspiring web developer currently studying Grade 12 at
+        <strong>Nehru Matriculation Higher Secondary School</strong> in Nagapattinam, Tamil Nadu.
+      </p>
+      <p class="about-text">
+        My curiosity about websites inspired me to create <strong> PERFCUT</strong> — a place where I learn, experiment, and build useful digital experiences.
+      </p>
+      <p class="about-text">
+      Driven by passion and curiosity, I enjoy creating websites that combine creativity & passion.
+      </p>
+
+      <div class="origin-block fade-in fade-delay-2">
+        <div class="origin-label">How I started</div>
+        <p class="origin-text">
+          It began with simple curiosity — learning new things. I started exploring web development through YouTube
+          tutorials, gradually understanding how websites are designed and built. What started as a hobby quickly
+          became a passion that I've been pursuing ever since.
+        </p>
+      </div>
+    </div>
+
+    <div class="about-right">
+      <div class="stat-card fade-in fade-delay-1">
+        <div class="stat-number">16</div>
+        <div class="stat-label">Years old</div>
+      </div>
+      <div class="stat-card fade-in fade-delay-2">
+        <div class="stat-number">7+</div>
+        <div class="stat-label">Technologies Learned</div>
+      </div>
+      <div class="stat-card fade-in fade-delay-3">
+        <div class="stat-number">3</div>
+        <div class="stat-label">Live Projects</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     SKILLS
+══════════════════════════════ -->
+<section id="skills" class="skills-section">
+  <div class="section-label fade-in">02 — Skills</div>
+
+  <div class="skills-intro fade-in">
+    <h2 class="section-heading">Skilled at</h2>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-card fade-in fade-delay-1">
+      <img src="assets/images/html5.png" alt="HTML5" class="skill-icon"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="skill-icon-fallback">HTML</div>
+      <span class="skill-name">HTML5</span>
+    </div>
+    <div class="skill-card fade-in fade-delay-1">
+      <img src="assets/images/css3.png" alt="CSS3" class="skill-icon"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="skill-icon-fallback">CSS</div>
+      <span class="skill-name">CSS3</span>
+    </div>
+    <div class="skill-card fade-in fade-delay-2">
+      <img src="assets/images/tailwindcss.png" alt="Tailwind CSS" class="skill-icon"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="skill-icon-fallback">TW</div>
+      <span class="skill-name">Tailwind</span>
+    </div>
+    <div class="skill-card fade-in fade-delay-2">
+      <img src="assets/images/javascript.png" alt="JavaScript" class="skill-icon"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="skill-icon-fallback">JS</div>
+      <span class="skill-name">JavaScript</span>
+    </div>
+    <div class="skill-card fade-in fade-delay-3">
+      <img src="assets/images/github-icon.png" alt="GitHub" class="skill-icon"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="skill-icon-fallback">GH</div>
+      <span class="skill-name">GitHub</span>
+    </div>
+    <div class="skill-card fade-in fade-delay-4">
+      <img src="assets/images/react.png" alt="React" class="skill-icon"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="skill-icon-fallback">⚛</div>
+      <span class="skill-name">React</span>
+    </div>
+    <div class="skill-card fade-in fade-delay-5">
+      <img src="assets/images/php.png" alt="PHP" class="skill-icon"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="skill-icon-fallback">PHP</div>
+      <span class="skill-name">PHP</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     PROJECTS
+══════════════════════════════ -->
+<section id="projects">
+  <div class="section-label fade-in">03 — Work</div>
+  <div class="projects-heading-row fade-in">
+    <h2 class="section-heading">My Creations</h2>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- PROJECT 1: IIW -->
+    <div class="project-card fade-in fade-delay-1">
+      <div class="project-thumb-wrap">
+        <img src="assets/images/iiw-thumbnail.png" alt="IIW Project" class="project-thumb"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="project-thumb-fallback">
+          <span class="project-thumb-fallback-text">IIW</span>
+        </div>
+        <div class="project-thumb-overlay"></div>
+      </div>
+      <div class="project-body">
+        <div class="project-index">Project 01</div>
+        <h3 class="project-title">IIW</h3>
+        <p class="project-desc">A modern invitation website built with a focus on clean design and accessibility.</p>
+        <div class="project-footer">
+          <a href="https://perfcut.github.io/invitation/index.html" target="_blank" class="btn-copper">
+            <span>Visit Site</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 2: Santhi Jewellery -->
+    <div class="project-card fade-in fade-delay-2">
+      <div class="project-thumb-wrap">
+        <img src="assets/images/jewellery-thumbnail.png" alt="Santhi Jewellery" class="project-thumb"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="project-thumb-fallback">
+          <span class="project-thumb-fallback-text">SJ</span>
+        </div>
+        <div class="project-thumb-overlay"></div>
+      </div>
+      <div class="project-body">
+        <div class="project-index">Project 02</div>
+        <h3 class="project-title">Santhi Jewellery</h3>
+        <p class="project-desc">A jewellery showcase website designed to present products in a clean and elegant way.</p>
+        <div class="project-footer">
+          <a href="https://perfcut.github.io/santhijewellery/" target="_blank" class="btn-copper">
+            <span>Visit Site</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 3: Wrapped.inn -->
+    <div class="project-card fade-in fade-delay-3">
+      <div class="project-thumb-wrap">
+        <img src="assets/images/wrappedinn-thumbnail.png" alt="Wrapped.inn" class="project-thumb"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="project-thumb-fallback">
+          <span class="project-thumb-fallback-text">W.inn</span>
+        </div>
+        <div class="project-thumb-overlay"></div>
+      </div>
+      <div class="project-body">
+        <div class="project-index">Project 03</div>
+        <h3 class="project-title">Wrapped.inn</h3>
+        <p class="project-desc">A modern website concept created with a focus on user experience and responsive design.</p>
+        <div class="project-footer">
+          <a href="https://wrappedinn.github.io/Wrapped.inn/" target="_blank" class="btn-copper">
+            <span>Visit Site</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     CONTACT
+══════════════════════════════ -->
+<section id="contact" class="contact-section">
+  <div class="section-label fade-in">04 — Contact</div>
+
+  <div class="contact-inner">
+    <div class="fade-in">
+      <h2 class="contact-headline">Have a project<br>idea? <span>Let's talk.</span></h2>
+      <p class="contact-sub">Open to collaborations, feedback, and new opportunities. Reach out via phone or email.</p>
+
+      <div class="contact-items">
+        <a href="tel:+916383957286" class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.5 2 2 0 0 1 3.58 1.5h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </div>
+          <div>
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+91 6383957286</span>
+          </div>
+        </a>
+        <a href="mailto:mohd.saif0212@gmail.com" class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div>
+            <span class="contact-label">Personal Mail</span>
+            <span class="contact-value">mohd.saif0212@gmail.com</span>
+          </div>
+        </a>
+        <a href="mailto:team.perfect@gmail.com" class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div>
+            <span class="contact-label">Perfcut Mail</span>
+            <span class="contact-value">team.perfect@gmail.com</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Profiles -->
+    <div class="profiles-block fade-in fade-delay-2">
+      <div class="profiles-heading">Profiles</div>
+
+      <!-- Personal -->
+      <div class="profiles-group">
+        <div class="profiles-group-title">Mohamed Saif</div>
+        <a href="https://www.linkedin.com/in/mohamed-saif-a7739b3ba/" target="_blank" class="profile-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="https://perfect.github.io" target="_blank" class="profile-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+          perfect.github.io
+        </a>
+        <a href="https://instagram.com/sxzz.jpg" target="_blank" class="profile-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+          @sxzz.jpg
+        </a>
+      </div>
+
+      <!-- Perfcut -->
+      <div class="profiles-group">
+        <div class="profiles-group-title">Perfcut</div>
+        <a href="https://perfect.github.io" target="_blank" class="profile-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+          perfect.github.io
+        </a>
+        <a href="https://instagram.com/perf.cut" target="_blank" class="profile-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+          @perf.cut
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     FOOTER
+══════════════════════════════ -->
+<footer>
+  <div class="footer-copy">
+    Mohamed <span>Saif</span>
+  </div>
+  <div class="footer-built">PERFCUT — Building Modern Web</div>
+</footer>
+
+<!-- JavaScript -->
+<script src="assets/main.js"></script>
+
+</body>
+      </html>
